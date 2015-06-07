@@ -1,0 +1,143 @@
+
+/***********************************
+   GAME
+************************************/
+
+#game-board {
+	background-color: #660066;
+  clear: both;
+  display: block;
+	position: absolute;
+  width: 100%;
+	height: auto;
+  margin: 4em auto;
+  padding-top: 3em;
+	padding-left: 3.5%;
+}
+
+#game-board div {
+  background-color: #833083;
+  display: inline-block;
+  position: relative;
+  margin: .05em;
+  border-radius: .25em;
+  width: 6%;
+  padding: 8%;
+}
+
+
+/***********************************
+   STYLES
+************************************/
+
+html {font-size: 1em;
+}
+
+body {
+  background-color: #660066;
+  color: #CCFF99;
+}
+
+p {margin-bottom: 1.3em;}
+
+h1, h2, h3, h4, h5, h6 {
+  font-size: 100%;
+  font-family: 'Slackey', sans-serif;
+  font-weight: 400;
+  line-height: 3.25;
+  margin: 1.414em 0 0.5em;
+  font-weight: bold;
+  line-height: 1.35;
+}
+
+h1 {
+  margin-top: 0;
+  font-size: 4em;
+}
+
+h2 {font-size: 2.369em;
+}
+
+h3 {font-size: 1.777em;
+}
+
+h4 {font-size: 1.2em;
+}
+
+small, .font_small {font-size: 0.75em;
+}
+
+*, *:after, *:before {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+/***********************************
+   PAGE: INDEX / CHOOSE NEW GAME
+************************************/
+
+.easy-btn, .hard-btn {
+  text-align: center;
+  margin: 2em auto 0;
+  width: 30%;
+  font-family: 'Slackey', sans-serif;
+  font-size: 20px;
+}
+
+/* separate buttons for future different versions of easy vs. hard */
+
+a {
+  display: block;
+  padding: 20px 10px;
+}
+
+a:link, a:visited, a:active {
+  color: #CCFF99;
+  text-decoration: none;
+  border: solid #CCFF99 2px;
+}
+
+a:hover {
+  background: #CCFF99;
+  color: #660066;
+  text-decoration: none;
+  border: 0;
+
+}
+
+/***********************************
+   PAGE: MEMORY / GAME ACTIVITY
+************************************/
+
+
+/***********************************
+   HEADER
+************************************/
+
+.logo {
+  font-family: 'Slackey', sans-serif;
+  text-align: center;
+  padding-top: 2em;
+  margin: auto;
+  color: #CCFF99;
+}
+
+.icon {
+  font-size: 1em;
+}
+
+.hearts .time {
+  display: inline-block;
+  margin-bottom: 3em;
+}
+
+.hearts {
+  float: left;
+  margin-left: 4em;
+}
+
+.time {
+  float: right;
+  margin-right: 5.5em;
+}
