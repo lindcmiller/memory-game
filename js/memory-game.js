@@ -5,9 +5,13 @@ var lives = 0;
 }
 
 function timer() {}
+    var timer = document.getElementById('.timer').innerHTML = h+ ":" + m + ":" + s;
+    t = setInterval(function(){ timer() }, 500);
+}
+
 */
 
-var tileIconsArray = ["fa fa-heartbeat", "fa fa-heartbeat", "fa fa-cloud", "fa fa-cloud", "fa fa-dot-circle-o", "fa fa-dot-circle-o", "fa fa-cogs", "fa fa-cogs", "fa fa-leaf", "fa fa-leaf", "fa fa-globe", "fa fa-globe", "fa fa-bolt", "fa fa-bolt", "fa fa-diamond", "fa fa-diamond", "fa fa-puzzle-piece", "fa fa-puzzle-piece"];
+var tileIconsArray = ["<i class="fa fa-heartbeat"></i>", "fa fa-heartbeat", "fa fa-cloud", "fa fa-cloud", "fa fa-dot-circle-o", "fa fa-dot-circle-o", "fa fa-cogs", "fa fa-cogs", "fa fa-leaf", "fa fa-leaf", "fa fa-globe", "fa fa-globe", "fa fa-bolt", "fa fa-bolt", "fa fa-diamond", "fa fa-diamond", "fa fa-puzzle-piece", "fa fa-puzzle-piece"];
 
 var tilesSelected = [];
 var iconShow = [];
@@ -27,7 +31,7 @@ function newGame(){
 	var output = '';
     tileIconsArray.randomizeTiles();
 	for(var i = 0; i < tileIconsArray.length; i++){
-		output += '<div id="tile_'+i+'" onclick="flipTile(this,\''+tileIconsArray[i]+'\')"></div>';
+    output += '<div id="tile_'+i+'" onclick="flipTile(this,\''+tileIconsArray[i]+'\')"></div>';
 	}
 	document.getElementById('game-board').innerHTML = output;
 }
